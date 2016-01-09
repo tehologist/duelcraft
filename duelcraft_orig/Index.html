@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <title>Duel Craft</title>
+        <script type="text/javascript" src="./jquery.js"></script>
+        <script type="text/javascript" src="./DuelCraft.js"></script>
+        <script type="text/javascript" src="./Bots.js"></script>
+        <script type="text/javascript" src="./application.js"></script>
+        <style type="text/css">
+            div.scroll {
+                height: 400px;
+                width: 600px;
+                overflow: auto;
+                border: 1px solid #666;
+                background-color: #ccc;
+                padding: 8px;
+            }
+        </style> 
+    </head>
+    <body>
+    <table>
+    <tr><td>
+        <select id="player1">
+        <option>XXXXXXXXXXXXXXXXXXXXXXXXXX</option>
+        </select>
+        </td>
+        <td>
+        <select id="player2">
+        <option>XXXXXXXXXXXXXXXXXXXXXXXXXX</option>
+        </select>
+        </td>
+        </tr></table>
+        <input type="button" id="start" value="Start" />
+        <input type="button" id="next" value="Next" /><br />
+        Human<input type="checkbox" id="isHuman" /><br />
+        
+        <table>
+        <tr>
+        <td>
+        <input type="radio" name="LeftHand" value="Red"/ checked>Red<br />
+        <input type="radio" name="LeftHand" value="Blue"/>Blue<br />
+        <input type="radio" name="LeftHand" value="Green"/>Green<br />
+        </td>
+        <td>
+        <input type="radio" name="RightHand" value="Red"/ checked>Red<br />
+        <input type="radio" name="RightHand" value="Blue"/>Blue<br />
+        <input type="radio" name="RightHand" value="Green"/>Green<br />
+        </td>
+        </tr>
+        </table>
+        <br />
+        <div id="battleMessage" class="scroll"></div>
+    </body>
+</html>
